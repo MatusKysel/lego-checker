@@ -3,7 +3,7 @@ import sys
 
 # url = 'https://shop.lego.com/en-CZ/LEGO-NASA-Apollo-Saturn-V-21309'
 
-def check_aviability(url):
+def check_availability(url):
 	response = urllib.request.urlopen(url)
 	data = response.read().decode('utf-8')
 
@@ -12,6 +12,5 @@ def check_aviability(url):
 	else:
 		return False 
 
-
 if __name__ == "__main__":
-	check_aviability(sys.argv[1])
+	check_availability(sys.argv[1])
