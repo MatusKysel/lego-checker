@@ -13,6 +13,6 @@ def check_availability(url):
 
 if __name__ == "__main__":
 	if check_availability(sys.argv[1]):
-		sys.exit(0)
-	else:
 		sys.exit(1)
+	else:
+		sys.exit(0)
